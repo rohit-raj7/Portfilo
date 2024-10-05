@@ -1,0 +1,70 @@
+body{
+    background-image: linear-gradient(281deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.581)), linear-gradient(281deg, rgba(22, 114, 53, 0.584), rgb(91, 156, 217));
+ 
+}
+#calculator{
+    background-color: rgb(152, 201, 234);
+    /* border: 1px solid  rgb(136, 169, 190); */
+    border-radius:20px;
+    width: 223px;
+    height: 380px;
+    margin-left: 59px;
+    margin-top: 40px;
+
+}
+
+.calsss{
+    color: rgb(15, 82, 134);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-top: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#display{
+    /* margin-top: 40px; */
+    margin: 19px 0;
+    width: 85%;
+    border: 1; 
+    border-radius: 3%;
+ border-color: rgb(18, 101, 83);
+    margin-left: 12px;
+     font-size: 25px;
+     background-color:  rgb(152, 201, 234);;
+}
+.button,.Acbutton,.Sbutton,.Eqbutton{
+    
+    background-color: rgb(56, 117, 139);
+    color:beige;
+    border-radius: 15%;
+      width: 40px;
+      height: 40px;
+      margin: 3px;
+    font-size: 21px;
+    border: 0;
+}
+.Eqbutton{
+    color:white;
+        background-color: rgb(49, 168, 45);
+}
+ .Sbutton{
+        color:rgb(246, 246, 246);
+       
+        background-color: rgb(230, 169, 16);
+        border-radius: 40%;
+    
+}
+.Acbutton{
+    color:rgb(255, 255, 255);
+    background-color: rgb(236, 19, 19);
+}
+.button:hover{
+    background-color: rgb(78, 140, 16);
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+    flex-wrap:wrap;  
+}

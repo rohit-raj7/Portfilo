@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    
+
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+.paragrap {
+    text-align: center;
+    margin-bottom: 34px;
+    /* width: 80%; */
+    padding-left: 12%;
+    padding-right: 12%;
+}
+.paragrap p{
+   font-size: 1.4rem;
+   font-weight: 500;
+   font-family: 'Courier New', Courier, monospace;
+}
+.paragrap p {
+  overflow: hidden;
+  white-space: nowrap; /* Ensure the text doesn't wrap */
+  width: 0;
+  border-right: 2px solid rgb(255, 255, 255); /* Cursor effect */
+  animation: typing 3s steps(30, end) infinite, blink 0.6s step-end infinite;
+  
+  /* animation: typing 3s steps(30, end) forwards, blink 0.6s step-end infinite; */
+}
+
+/* Typing effect */
+@keyframes typing {
+  0% { width: 0; }
+  100% { width: 100%; } 
+}
+
+@keyframes blink {
+  0% { border-color: rgb(255, 255, 255); }
+  50% { border-color: transparent; }
+  100% { border-color: rgb(255, 255, 255); }
+}
+
+    </style>
+</head>
+<body>
+           <div class="paragrap">
+           <p>Hey there! Welcome to my Weather Clone. Let's check out the weather together!</p>
+           </div>
+    <main>
+        <div class="card">
+            <div class="search">
+                <input type="text" placeholder="Enter your City name" spellcheck="false">
+                <button><img src="images/search.png" alt="Search"></button>
+            </div>
+            <div class="error">
+                <p>Invalid city name</p>
+            </div>
+            <div class="weather">
+                <img src="images/rain.png" class="weather_icon" alt="Weather Icon">
+                <h1 class="temp">22°C</h1>
+                <h2 class="city">New York</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="images/humidity.png" alt="Humidity Icon">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="images/wind.png" alt="Wind Icon">
+                        <div>
+                            <p class="wind">15 km/h</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="frow">
+            <div class="fcol">
+                <h4>Address<div class="underline"><span></span></div></h4>
+                <p class="adcol">Banka, Bihar - 813102</p>
+            </div>
+            <div class="fcol">
+                <h4>Links<div class="underline"><span></span></div></h4>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li id="Footer_about"><a>ABOUT</a></li>
+                </ul>
+            </div>
+            <div class="fcol">
+                <h4>Contact<div class="underline"><span></span></h4>
+                <ul>
+                    <li><a href="mailto:rohit.raj.career@gmail.com">rohit.raj.career@gmail.com</a></li>
+                    <li><a href="tel:+917061588507">+91 - 7061588507</a></li>
+                </ul>
+            </div>
+            <div class="fcol">
+                <h4>Follow<div class="underline"><span></span></h4>
+                <div class="social-icons">
+                    <a href="https://x.com/rohit_raj70" target="_blank" title="X">
+                        <img class="social-c" width="30" src="images/x.com.png" style="border-radius: 50%; width: 2.5rem; height: 2.5rem;">
+                    </a>
+                    <a href="https://www.linkedin.com/in/rohit-raj7/" target="_blank" title="Linkedin">
+                        <img class="social-c" width="33" src="images/linkin.png">
+                    </a>
+                    <a href="https://www.youtube.com/@feelwinner" target="_blank" title="Youtube">
+                        <img class="social-c" width="33" src="images/You.png">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100054958818717" target="_blank" title="facebook">
+                        <img class="social-c" width="33" src="images/facebook.png" style="border-radius: 10%;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2024-25 All Rights Reserved by Rohit Raj |  By: <a target="_blank" class="text-warning">ROHIT RAJ</a></p>
+    </footer>
+          <script src="script.js"></script>
+</body>
+</html>
+

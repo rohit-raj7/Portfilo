@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeeProject</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background:  rgb(4, 18, 19);
+        }
+        .proj{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          margin-top: 10rem;
+        gap: 5rem;
+        }
+
+       
+  .Calculator,.Queen{
+    width: 150px; 
+    align-items: center;
+        justify-content: center;
+        line-height: 1;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        border-radius: 30px;
+        width: 15rem;
+        height:4rem;
+        font-weight: bold;
+        border: 2px solid #ffffff;
+        transition: 0.3s;
+        box-shadow: inset 0px 4px 10px px rgba(26, 127, 204, 0);
+        background-image: linear-gradient(281deg, rgb(5, 25, 33), rgba(15, 119, 160, 0.581)), linear-gradient(281deg, rgba(22, 114, 53, 0.584), rgb(91, 156, 217));
+  }
+  @media (max-width: 600px) {
+            .proj{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+   
+    </style>
+</head>
+<body>
+    <div class="proj">
+        <a href="Weather/index.html"><button id="weather_button"  class="Queen" >Weather App</button></a>
+   
+       <a href="Calculator/calculator.html"><button class="Calculator">Calculator</button></a>
+        <a href="N-Queen _Visualiser/Queen.html"><button class="Queen">N-Queen Visualiser</button></a>
+        
+    </div>
+</body>
+</html>

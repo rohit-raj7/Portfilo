@@ -1,0 +1,276 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin-top: 4rem;
+    
+  background-color: #0A1920;
+    /* background: #fff; */
+    color: #fff;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background-image: url('https://cdn.pixabay.com/animation/2023/06/25/21/55/21-55-38-961_256.gif'); 
+    background-size: cover;
+    background-position: center; 
+    border-radius: 20px;
+    padding: 40px 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding-bottom: 5rem;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search input {
+    width: calc(100% - 80px);
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #333;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 15px rgba(0, 255, 186, 0.6);
+    transition: box-shadow 0.3s ease;
+}
+
+.search input:focus {
+    box-shadow: 0 0 25px rgba(0, 255, 186, 1);
+}
+
+.search button {
+    border: none;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search button img {
+    padding-top: 4px;
+    width: 25px;
+    height: auto;
+}
+
+.search button:hover {
+    background: #d7fff8;
+    transform: scale(1.1);
+}
+
+.weather_icon {
+    width: 150px;
+    margin: 20px auto;
+}
+
+.weather h1 {
+    font-size: 80px;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 45px;
+    margin-top: -10px;
+    font-weight: 400;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.col img {
+    width: 40px;
+}
+
+.humidity, .wind {
+    font-size: 24px;
+}
+
+.error {
+    color: #f00;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 2rem;
+    display: none;
+    margin-top: 10px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color:#0e345c;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.frow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fcol h4 {
+    margin: 10px;
+}
+
+.underline {
+    height: 2px;
+    width: 50px;
+    background-color: #ffffff;
+    margin-top: 5px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-c {
+    margin-right: 10px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul.no-dots {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.no-dots li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h4 {
+    color: #fff;
+}
+
+
+
+
+a {
+    text-decoration: none;
+  font-size: 13px;
+    color: #ffffff;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  h4 {
+    position: relative;
+    display: inline-block; /* Ensure the h4 only takes up the width of its content */
+  }
+
+  
+  .underline {
+    position: relative;
+    height: 4px; /* Thickness of the underline (adjusted for boldness) */
+    background-color: transparent; /* Hide the background initially */
+    overflow: hidden; /* Prevent overflow during animation */
+  }
+  
+  .underline span {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #fff; /* Color of the underline (white) */
+    animation: moveUnderline 2s linear infinite; /* Continuous animation properties */
+  }
+  
+  @keyframes moveUnderline {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+  }
+  
+  .underline span {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Soft glow effect */
+  } 
+  
+
+@media (max-width: 400px) {   
+     .paragrap {
+        text-align: center;
+        margin-bottom: 14px;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+  
+    .paragraph p { 
+       text-overflow: ellipsis;
+       overflow: hidden;
+       white-space: nowrop;
+       width: 50%;
+       padding: 2px 5px;
+       
+   }
+   
+
+    .card {
+        width: 90%;
+        max-width: 370px;
+        
+    }
+  }
+  
